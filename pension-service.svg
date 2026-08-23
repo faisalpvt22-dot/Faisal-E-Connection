@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="penBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFBF7"/>
+      <stop offset="100%" stop-color="#F1ECE1"/>
+    </linearGradient>
+    <linearGradient id="bookGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="100%" stop-color="#172554"/>
+    </linearGradient>
+    <filter id="penShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#penBg)"/>
+  <circle cx="200" cy="150" r="110" fill="#DBEAFE" opacity="0.4"/>
+
+  <!-- Senior Pension Passbook & Cash Graphic -->
+  <g transform="translate(100, 75)" filter="url(#penShadow)">
+    <!-- Passbook Cover -->
+    <rect width="200" height="150" rx="10" fill="url(#bookGrad)" stroke="#3B82F6" stroke-width="1.5"/>
+    
+    <!-- Golden Emblem / Seal on Passbook -->
+    <circle cx="100" cy="45" r="20" fill="none" stroke="#FDE047" stroke-width="2"/>
+    <polygon points="100,32 104,40 113,40 106,46 108,54 100,49 92,54 94,46 87,40 96,40" fill="#FDE047"/>
+    
+    <text x="100" y="80" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle" letter-spacing="1">PENSION PASSBOOK</text>
+    <text x="100" y="94" fill="#93C5FD" font-family="system-ui, sans-serif" font-size="8" font-weight="600" text-anchor="middle">GOVERNMENT OF INDIA</text>
+
+    <!-- Scheme Details ribbon -->
+    <rect x="25" y="105" width="150" height="28" rx="6" fill="#1E40AF"/>
+    <text x="100" y="123" fill="#FEF08A" font-family="system-ui, sans-serif" font-size="10" font-weight="800" text-anchor="middle">MONTHLY DISBURSEMENT ₹</text>
+  </g>
+
+  <!-- Cash notes fanned out at corner -->
+  <g transform="translate(250, 160) rotate(-15)">
+    <rect x="0" y="0" width="100" height="50" rx="4" fill="#86EFAC" stroke="#15803D" stroke-width="1.5"/>
+    <circle cx="50" cy="25" r="14" fill="#DCFCE7"/>
+    <text x="50" y="30" fill="#15803D" font-family="system-ui, sans-serif" font-size="12" font-weight="900" text-anchor="middle">₹500</text>
+  </g>
+
+  <!-- Badge -->
+  <g transform="translate(45, 35)">
+    <rect width="130" height="26" rx="13" fill="#1E40AF"/>
+    <text x="65" y="17" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="0.5">PENSION WITHDRAW</text>
+  </g>
+</svg>

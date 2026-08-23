@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="aepsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFBF7"/>
+      <stop offset="100%" stop-color="#F1ECE1"/>
+    </linearGradient>
+    <linearGradient id="posGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="rupeeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#15803D"/>
+      <stop offset="100%" stop-color="#166534"/>
+    </linearGradient>
+    <linearGradient id="fingerprintGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <filter id="aepsShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#aepsBg)"/>
+  <circle cx="200" cy="150" r="110" fill="#E2E8F0" opacity="0.6"/>
+
+  <!-- Cash Notes Fan behind -->
+  <g transform="translate(180, 110) rotate(-15)">
+    <rect x="-60" y="-35" width="130" height="70" rx="6" fill="#86EFAC" stroke="#15803D" stroke-width="1.5"/>
+    <circle cx="5" cy="0" r="16" fill="#DCFCE7"/>
+    <text x="5" y="6" fill="#15803D" font-family="system-ui, sans-serif" font-size="18" font-weight="900" text-anchor="middle">₹500</text>
+  </g>
+  <g transform="translate(220, 110) rotate(12)">
+    <rect x="-60" y="-35" width="130" height="70" rx="6" fill="#BBF7D0" stroke="#166534" stroke-width="1.5"/>
+    <circle cx="5" cy="0" r="16" fill="#DCFCE7"/>
+    <text x="5" y="6" fill="#166534" font-family="system-ui, sans-serif" font-size="18" font-weight="900" text-anchor="middle">₹500</text>
+  </g>
+
+  <!-- Micro ATM / Biometric Device -->
+  <g filter="url(#aepsShadow)">
+    <rect x="135" y="80" width="130" height="180" rx="16" fill="url(#posGrad)" stroke="#334155" stroke-width="2"/>
+    
+    <!-- Screen -->
+    <rect x="150" y="95" width="100" height="55" rx="6" fill="#0284C7"/>
+    <text x="200" y="115" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">AEPS CASH WITHDRAW</text>
+    <text x="200" y="138" fill="#F0FDF4" font-family="system-ui, sans-serif" font-size="16" font-weight="900" text-anchor="middle">₹ SUCCESS</text>
+
+    <!-- Fingerprint Scanner Pad -->
+    <circle cx="200" cy="185" r="24" fill="#0369A1" stroke="#38BDF8" stroke-width="2"/>
+    <!-- Biometric Rings -->
+    <path d="M190 185 A10 10 0 0 1 210 185" fill="none" stroke="#E0F2FE" stroke-width="2" stroke-linecap="round"/>
+    <path d="M186 190 A15 15 0 0 1 214 190" fill="none" stroke="#E0F2FE" stroke-width="2" stroke-linecap="round"/>
+    <path d="M194 180 A6 6 0 0 1 206 180" fill="none" stroke="#E0F2FE" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="200" cy="175" r="2" fill="#E0F2FE"/>
+
+    <!-- Keypad Dots -->
+    <circle cx="170" cy="230" r="4" fill="#64748B"/>
+    <circle cx="190" cy="230" r="4" fill="#64748B"/>
+    <circle cx="210" cy="230" r="4" fill="#64748B"/>
+    <circle cx="230" cy="230" r="4" fill="#22C55E"/>
+  </g>
+
+  <!-- Instant Cash Badge -->
+  <g transform="translate(45, 40)">
+    <rect width="115" height="26" rx="13" fill="#15803D"/>
+    <text x="57" y="17" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="0.5">AEPS WITHDRAW</text>
+  </g>
+</svg>

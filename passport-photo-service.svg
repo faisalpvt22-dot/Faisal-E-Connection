@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="photoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFBF7"/>
+      <stop offset="100%" stop-color="#F1ECE1"/>
+    </linearGradient>
+    <linearGradient id="sheetGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <filter id="photoShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#photoBg)"/>
+  <circle cx="200" cy="150" r="110" fill="#E2E8F0" opacity="0.4"/>
+
+  <!-- 8-Photo Passport Sheet (4x2 grid) -->
+  <g transform="translate(85, 55)" filter="url(#photoShadow)">
+    <rect width="230" height="190" rx="8" fill="url(#sheetGrad)" stroke="#CBD5E1" stroke-width="1.5"/>
+    
+    <!-- Photo 1 -->
+    <g transform="translate(18, 18)">
+      <rect width="42" height="52" rx="3" fill="#E0F2FE" stroke="#94A3B8" stroke-width="1"/>
+      <circle cx="21" cy="20" r="9" fill="#0284C7"/>
+      <path d="M10 46 C10 34, 32 34, 32 46" fill="#0369A1"/>
+    </g>
+    <!-- Photo 2 -->
+    <g transform="translate(68, 18)">
+      <rect width="42" height="52" rx="3" fill="#E0F2FE" stroke="#94A3B8" stroke-width="1"/>
+      <circle cx="21" cy="20" r="9" fill="#0284C7"/>
+      <path d="M10 46 C10 34, 32 34, 32 46" fill="#0369A1"/>
+    </g>
+    <!-- Photo 3 -->
+    <g transform="translate(118, 18)">
+      <rect width="42" height="52" rx="3" fill="#E0F2FE" stroke="#94A3B8" stroke-width="1"/>
+      <circle cx="21" cy="20" r="9" fill="#0284C7"/>
+      <path d="M10 46 C10 34, 32 34, 32 46" fill="#0369A1"/>
+    </g>
+    <!-- Photo 4 -->
+    <g transform="translate(168, 18)">
+      <rect width="42" height="52" rx="3" fill="#E0F2FE" stroke="#94A3B8" stroke-width="1"/>
+      <circle cx="21" cy="20" r="9" fill="#0284C7"/>
+      <path d="M10 46 C10 34, 32 34, 32 46" fill="#0369A1"/>
+    </g>
+
+    <!-- Photo 5 -->
+    <g transform="translate(18, 80)">
+      <rect width="42" height="52" rx="3" fill="#E0F2FE" stroke="#94A3B8" stroke-width="1"/>
+      <circle cx="21" cy="20" r="9" fill="#0284C7"/>
+      <path d="M10 46 C10 34, 32 34, 32 46" fill="#0369A1"/>
+    </g>
+    <!-- Photo 6 -->
+    <g transform="translate(68, 80)">
+      <rect width="42" height="52" rx="3" fill="#E0F2FE" stroke="#94A3B8" stroke-width="1"/>
+      <circle cx="21" cy="20" r="9" fill="#0284C7"/>
+      <path d="M10 46 C10 34, 32 34, 32 46" fill="#0369A1"/>
+    </g>
+    <!-- Photo 7 -->
+    <g transform="translate(118, 80)">
+      <rect width="42" height="52" rx="3" fill="#E0F2FE" stroke="#94A3B8" stroke-width="1"/>
+      <circle cx="21" cy="20" r="9" fill="#0284C7"/>
+      <path d="M10 46 C10 34, 32 34, 32 46" fill="#0369A1"/>
+    </g>
+    <!-- Photo 8 -->
+    <g transform="translate(168, 80)">
+      <rect width="42" height="52" rx="3" fill="#E0F2FE" stroke="#94A3B8" stroke-width="1"/>
+      <circle cx="21" cy="20" r="9" fill="#0284C7"/>
+      <path d="M10 46 C10 34, 32 34, 32 46" fill="#0369A1"/>
+    </g>
+
+    <!-- Bottom Studio Label -->
+    <rect x="18" y="145" width="192" height="30" rx="5" fill="#F1F5F9" stroke="#E2E8F0"/>
+    <text x="114" y="164" fill="#334155" font-family="system-ui, sans-serif" font-size="10" font-weight="800" text-anchor="middle">⚡ INSTANT 8 COPIES (35x45mm)</text>
+  </g>
+
+  <!-- Badge -->
+  <g transform="translate(45, 30)">
+    <rect width="130" height="26" rx="13" fill="#8B261D"/>
+    <text x="65" y="17" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="0.5">PASSPORT PHOTO</text>
+  </g>
+</svg>
